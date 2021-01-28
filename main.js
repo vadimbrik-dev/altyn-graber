@@ -1,0 +1,1 @@
+[["Дата прихода", "Артикул", "Производитель", "Наименование", "Цена", "Количество"], ...Array.from($0.children).map(row => Array.from(row.children).map(item => item.innerText).filter((_, index) => [1, 3, 6, 7, 8, 9, 10].includes(index))).filter(row => row[0] === "выдано").map(row => row.splice(1))].map(row => row.map(e => e.trim().replace(/\,/g, ';')).join(", ")).join(",\n")
